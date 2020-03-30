@@ -81,12 +81,6 @@ namespace BuyTicketInfo.Controllers
                     // 出队列
                     ti = ticketsAsQueue.Dequeue();
 
-                    //[UserId]
-                    //[TicketId]
-                    //[Price]
-                    //[OrderTime]
-                    //[DepartTime]
-
                     //保存购票信息
                     isOk = conn.Insert<OrdersModel>(new OrdersModel
                     {
